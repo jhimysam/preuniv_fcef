@@ -22,14 +22,21 @@ class _LoginPageState extends State<LoginPage> {
     final email = TextFormField(
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
-      
       decoration: InputDecoration(
         hintText: 'Ingrese su CI',
         contentPadding: EdgeInsets.fromLTRB(30.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),
     );
-
+    final password = TextFormField(
+      autofocus: false,
+      obscureText: true,
+      decoration: InputDecoration(
+        hintText: 'Password',
+        contentPadding: EdgeInsets.fromLTRB(30.0, 10.0, 20.0, 10.0),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
+      ),
+    );
     
 
     return Scaffold(
@@ -43,7 +50,8 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(height: 30.0),
             email,
             SizedBox(height: 8.0),
-            
+            password,
+            SizedBox(height: 8.0),
             
           ],
         ),
