@@ -15,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
       tag: 'hero',
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
-        radius: 48.0,
+        radius: 110.0,
         child: Image.asset('assets/logo.png'),
       ),
     );
@@ -25,7 +25,7 @@ class _LoginPageState extends State<LoginPage> {
       
       decoration: InputDecoration(
         hintText: 'Ingrese su CI',
-        contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+        contentPadding: EdgeInsets.fromLTRB(30.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),
     );
@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
           padding: EdgeInsets.only(left: 24.0, right: 24.0),
           children: <Widget>[
             logo,
-            SizedBox(height: 48.0),
+            SizedBox(height: 30.0),
             email,
             SizedBox(height: 8.0),
             
