@@ -42,13 +42,14 @@ class _LoginPageState extends State<LoginPage> {
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
+
         ),
         onPressed: () {
           Navigator.of(context).pushNamed(EvaluationPage.tag);
         },
         padding: EdgeInsets.all(12),
-        color: Colors.lightBlueAccent,
-        child: Text('Log In', style: TextStyle(color: Colors.white)),
+        color: Colors.green,
+        child: Text('Ingresar', style: TextStyle(color: Colors.white, fontSize: 20.0)),
       ),
     );
 
