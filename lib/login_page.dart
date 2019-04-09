@@ -10,7 +10,11 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    
+    final Text title = new Text(
+      "Preuniversitario FCEF",
+      style: TextStyle(
+          color: Colors.blueGrey, fontSize: 30.0, fontWeight: FontWeight.w800),
+    );
     final logo = Hero(
       tag: 'hero',
       child: CircleAvatar(
@@ -19,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Image.asset('assets/logo.png'),
       ),
     );
-    final email = TextFormField(
+    final ci = TextFormField(
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
       decoration: InputDecoration(
@@ -42,14 +46,14 @@ class _LoginPageState extends State<LoginPage> {
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
-
         ),
         onPressed: () {
           Navigator.of(context).pushNamed(EvaluationPage.tag);
         },
         padding: EdgeInsets.all(12),
         color: Colors.green,
-        child: Text('Ingresar', style: TextStyle(color: Colors.white, fontSize: 20.0)),
+        child: Text('Ingresar',
+            style: TextStyle(color: Colors.white, fontSize: 20.0)),
       ),
     );
 
@@ -60,14 +64,14 @@ class _LoginPageState extends State<LoginPage> {
           shrinkWrap: true,
           padding: EdgeInsets.only(left: 24.0, right: 24.0),
           children: <Widget>[
+            title,
             logo,
             SizedBox(height: 30.0),
-            email,
+            ci,
             SizedBox(height: 8.0),
             password,
             SizedBox(height: 8.0),
             loginButton,
-            
           ],
         ),
       ),
