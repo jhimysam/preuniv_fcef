@@ -20,7 +20,7 @@ class EvalPage extends StatefulWidget {
 
 class _EvalPageState extends State<EvalPage> {
   int _selectedIndex = 0;
- 
+  final TextStyle _style = TextStyle(fontWeight: FontWeight.w900);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,14 +30,28 @@ class _EvalPageState extends State<EvalPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.playlist_add_check, color: Colors.green), title: Text('Evaluaciones')),
-          BottomNavigationBarItem(icon: Icon(Icons.info, color: Colors.green,), title: Text('Informacion'),),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.playlist_add_check), 
+              title: Text('Evaluaciones', style: _style)),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.info), 
+              title: Text('Informacion', style: _style),),
           
         ],
+        currentIndex: _selectedIndex, 
+        iconSize: 35,
+        fixedColor: Colors.green,
+        onTap: _onItemTapped,
       ),
       
     );
   }
 
-  
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }  
 }
