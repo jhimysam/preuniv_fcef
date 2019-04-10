@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'evaluation_page.dart';
+import 'navigation_page.dart';
 
 class LoginPage extends StatefulWidget {
   static String tag = 'login-page';
@@ -48,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {
-          Navigator.of(context).pushNamed(EvaluationPage.tag);
+          Navigator.of(context).pushNamed(NavigationPage.tag);
         },
         padding: EdgeInsets.all(12),
         color: Colors.green,

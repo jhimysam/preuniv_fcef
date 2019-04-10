@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 
-class EvaluationPage extends StatelessWidget {
-  static String tag = 'evaluation-page';
+class NavigationPage extends StatelessWidget {
+  static String tag = 'navigation-page';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: new EvalPage()
+      home: new NavPage()
     );
   }
 }
 
-class EvalPage extends StatefulWidget {
-  EvalPage({Key key}) : super(key: key);
+class NavPage extends StatefulWidget {
+  NavPage({Key key}) : super(key: key);
 
   @override
-  _EvalPageState createState() => _EvalPageState();
+  _NavPageState createState() => _NavPageState();
 }
 
-class _EvalPageState extends State<EvalPage> {
+class _NavPageState extends State<NavPage> {
   int _selectedIndex = 0;
   final TextStyle _style = TextStyle(fontWeight: FontWeight.w900);
   final _widgetOptions = [Text('Select button Evaluaciones'), Text('Select button Informacion')];
