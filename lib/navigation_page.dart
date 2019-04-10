@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:preuniv_fcef/evaluation_page.dart';
+import 'package:preuniv_fcef/information_page.dart';
 
 class NavigationPage extends StatelessWidget {
   static String tag = 'navigation-page';
@@ -21,7 +23,7 @@ class NavPage extends StatefulWidget {
 class _NavPageState extends State<NavPage> {
   int _selectedIndex = 0;
   final TextStyle _style = TextStyle(fontWeight: FontWeight.w900);
-  final _widgetOptions = [Text('Select button Evaluaciones'), Text('Select button Informacion')];
+  final _widgetOptions = [new EvaluationPage(), new InformationPage()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +40,7 @@ class _NavPageState extends State<NavPage> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.info), 
-              title: Text('Informacion', style: _style),),
+              title: Text('Informacion', style: _style)),
           
         ],
         currentIndex: _selectedIndex, 
