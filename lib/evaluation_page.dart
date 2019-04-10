@@ -17,3 +17,20 @@ class EvalPage extends StatefulWidget {
   @override
   _EvalPageState createState() => _EvalPageState();
 }
+
+class _EvalPageState extends State<EvalPage> {
+  int _selectedIndex = 0;
+ 
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      
+      body: Center(
+        //stand by
+      ),
+      
+    );
+  }
+
+  
+}
