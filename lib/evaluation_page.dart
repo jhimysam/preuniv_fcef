@@ -21,12 +21,13 @@ class EvalPage extends StatefulWidget {
 class _EvalPageState extends State<EvalPage> {
   int _selectedIndex = 0;
   final TextStyle _style = TextStyle(fontWeight: FontWeight.w900);
+  final _widgetOptions = [Text('Select button Evaluaciones'), Text('Select button Informacion')];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       
       body: Center(
-        //stand by
+        child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
