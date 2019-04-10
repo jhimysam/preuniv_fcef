@@ -28,6 +28,13 @@ class _EvalPageState extends State<EvalPage> {
       body: Center(
         //stand by
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.playlist_add_check, color: Colors.green), title: Text('Evaluaciones')),
+          BottomNavigationBarItem(icon: Icon(Icons.info, color: Colors.green,), title: Text('Informacion'),),
+          
+        ],
+      ),
       
     );
   }
