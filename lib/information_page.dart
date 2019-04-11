@@ -10,12 +10,32 @@ class InformationPage extends StatelessWidget {
         Text(
           'Información',
           style: TextStyle(
-              fontSize: 30.0, letterSpacing: 4, fontWeight: FontWeight.bold),
+              fontSize: 30.0, letterSpacing: 4.0, fontWeight: FontWeight.bold),
         ),
         new CircleAvatar(
           backgroundColor: Colors.green,
           backgroundImage: NetworkImage('https://img.europapress.es/fotoweb/fotonoticia_20180428175726_640.jpg'),
           maxRadius: 90.0,
+        ),
+        Container(
+          child: Table(
+            border: TableBorder.all(width: 1.0, color: Colors.black12),
+            children: [
+              TableRow(
+                children: [
+                  TableCell(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        new Text('var1'),
+                        new Text('var2')
+                      ],
+                    ),
+                  )
+                ]
+              )
+            ],
+          ),
         )
       ],
     ));
