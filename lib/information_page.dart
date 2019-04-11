@@ -21,19 +21,50 @@ class InformationPage extends StatelessWidget {
           child: Table(
             border: TableBorder.all(width: 1.0, color: Colors.black12),
             children: [
-              TableRow(
-                children: [
+              TableRow(children: [
                   TableCell(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
                         new Text('var1'),
-                        new Text('var2')
+                        new Text('var2'),
                       ],
                     ),
                   )
-                ]
-              )
+                ]),
+                TableRow(children: [
+                  TableCell(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        new Text('b1'),
+                        new Text('b2'),
+                      ],
+                    ),
+                  )
+                ]),
+                TableRow(children: [
+                  TableCell(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        new Text('c1'),
+                        new Text('c2'),
+                      ],
+                    ),
+                  )
+                ]),
+                TableRow(children: [
+                  TableCell(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        new Text('d1'),
+                        new Text('d2'),
+                      ],
+                    ),
+                  )
+                ]),
             ],
           ),
         )
