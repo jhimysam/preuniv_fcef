@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class InformationPage extends StatelessWidget {
+  final _styleTxtBold = new TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold);
+  final _styleTxt = new TextStyle(fontSize: 20.0, color: Colors.black54);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,8 +28,8 @@ class InformationPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
-                        new Text('var1'),
-                        new Text('var2'),
+                        new Text('Paterno: ', style: _styleTxtBold),
+                        new Text('Sanabria', style: _styleTxt),
                       ],
                     ),
                   )
@@ -37,8 +39,8 @@ class InformationPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
-                        new Text('b1'),
-                        new Text('b2'),
+                        new Text('Materno: ', style: _styleTxtBold),
+                        new Text('Vacaflor', style: _styleTxt),
                       ],
                     ),
                   )
@@ -48,8 +50,8 @@ class InformationPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
-                        new Text('c1'),
-                        new Text('c2'),
+                        new Text('Nombres: ', style: _styleTxtBold),
+                        new Text('Carlos Fernando', style: _styleTxt),
                       ],
                     ),
                   )
@@ -59,8 +61,8 @@ class InformationPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
-                        new Text('d1'),
-                        new Text('d2'),
+                        new Text('Carrera:', style: _styleTxtBold),
+                        new Text('Administración de Empresas', style: _styleTxt),
                       ],
                     ),
                   )
