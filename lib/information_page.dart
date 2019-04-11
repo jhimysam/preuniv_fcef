@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class InformationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Stack(
-      alignment: Alignment.topCenter,
+    return Container(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         Text(
           'Información',
