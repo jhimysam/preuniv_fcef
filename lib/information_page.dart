@@ -10,8 +10,13 @@ class InformationPage extends StatelessWidget {
         Text(
           'Información',
           style: TextStyle(
-              fontSize: 30, letterSpacing: 4, fontWeight: FontWeight.bold),
+              fontSize: 30.0, letterSpacing: 4, fontWeight: FontWeight.bold),
         ),
+        new CircleAvatar(
+          backgroundColor: Colors.green,
+          backgroundImage: NetworkImage('https://img.europapress.es/fotoweb/fotonoticia_20180428175726_640.jpg'),
+          maxRadius: 90.0,
+        )
       ],
     ));
   }
