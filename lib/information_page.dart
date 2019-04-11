@@ -69,7 +69,7 @@ class InformationPage extends StatelessWidget {
                 ]),
             ],
           ),
-        )
+        ), Text("Salir", style: _styleTxtBold,)
       ],
     ));
   }
